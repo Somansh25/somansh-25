@@ -1,0 +1,299 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Anime Search</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #2c2c54;
+            color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #222240;
+        }
+        .header .menu-icon {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6a00ff;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #3a3a6a;
+            border-radius: 25px;
+            padding: 5px 10px;
+            margin-top: 10px;
+            margin-left: 360px;
+        }
+        .header .search-bar input {
+            border: none;
+            background: none;
+            color: #ffffff;
+            padding: 5px;
+            outline: none;
+        }
+        .header .search-bar .search-icon {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .header .search-bar button {
+            background-color: #6a00ff;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .main-content h2 {
+            margin: 0 0 20px 0;
+        }
+        .anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .anime-item {
+            background-color: #3a3a6a;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 200px;
+        }
+        .anime-item img {
+            width: 100%;
+            height: auto;
+        }
+        .anime-item .status {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #6a00ff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .anime-item .type {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #3498db;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .anime-item .sub {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #f39c12;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .anime-item .title {
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .sidebar .filter {
+            background-color: #3a3a6a;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .sidebar .filter button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a00ff;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .sidebar .filter select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #3a3a6a;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <i class="fas fa-bars menu-icon"></i>
+        <div class="logo">
+            Anime
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input placeholder="Search for anime..." type="text"/>
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>Search '...'</h2>
+            <div class="anime-list">
+                <div class="anime-item">
+                    <img alt="The Ossan Newbie Adventurer, Trained to" height="300" src="https://storage.googleapis.com/a1aa/image/GnizboJfoDVdMi9rlwZ5fLPRJ9c3GUlj74St8qEybqPqrx6TA.jpg" width="200"/>
+                    <div class="title">
+                        Name
+                    </div>
+                </div>
+                <div class="anime-item">
+                    <img alt="The Duke of Death and His Maid Season 3 (2024)" height="300" src="https://storage.googleapis.com/a1aa/image/K2GnfUA6rGVJNKLS8wNsLaN2Z7hNntaYtYIqLBXQOc031Y9JA.jpg" width="200"/>
+                    <div class="title">
+                        Name
+                    </div>
+                </div>
+                <div class="anime-item">
+                    <img alt="Death Parade (2015)" height="300" src="https://storage.googleapis.com/a1aa/image/xoer7ZpPIsR4BSbVLR5fD3gberCtfR3OzGpvDEkhaYPkuGrPB.jpg" width="200"/>
+                    <div class="title">
+                        Death Parade
+                    </div>
+                </div>
+                <div class="anime-item">
+                    <img alt="My Instant Death Ability is So Overpowered" height="300" src="https://storage.googleapis.com/a1aa/image/SPhTPuplj8rIA96O2zVQBXvLEnxPJBAEBvT0MfpJU8O31Y9JA.jpg" width="200"/>
+                    <div class="title">
+                        Name
+                    </div>
+                </div>
+                <div class="anime-item">
+                    <img alt="Dead Mount Death Play (2023)" height="300" src="https://storage.googleapis.com/a1aa/image/FJoVuyJMoWazDRnBweukM40PggnJBVYnJ4JW09IwLau11Y9JA.jpg" width="200"/>
+                    <div class="title">
+                        Name
+                    </div>
+                </div>
+                <div class="anime-item">
+                    <img alt="Death Note" height="300" src="https://storage.googleapis.com/a1aa/image/fLeaZZAuJNqFMkG7v4XOceu8apEanfzuunxxtCQNhKZxuGrPB.jpg" width="200"/>
+                    <div class="title">
+                        Death Note
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="filter">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="cars">Cars</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="dementia">Dementia</option>
+                    <option value="demons">demons</option>
+                    <option value="drama">Drama</option>
+                    <option value="Ecchi">Ecchi</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="game">Game</option>
+                    <option value="harem">Harem</option>
+                    <option value="historical">Historical</option>
+                    <option value="horror">Horror</option>
+                    <option value="isekai">Isekai</option>
+                    <option value="josei">Josei</option>
+                    <option value="kids">Kids</option>
+                    <option value="magic">Magic</option>
+                    <option value="martial-arts">Martial Arts</option>
+                    <option value="mecha">Mecha</option>
+                    <option value="military">Military</option>
+                    <option value="music">Music</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="parody">Parody</option>
+                    <option value="police">Police</option>
+                    <option value="psychological">Psychological</option>
+                    <option value="romance">Romance</option>
+                    <option value="samurai">Samurai</option>
+                    <option value="school">School</option>
+                    <option value="sci-fi">Science Fiction</option>
+                    <option value="seinen">Seinen</option>
+                    <option value="shoujo">Shoujo</option>
+                    <option value="shoujo-ai">Shoujo Ai</option>
+                    <option value="shounen">Shounen</option>
+                    <option value="shounen-ai">Shounen Ai</option>
+                    <option value="slice-of-life">Slice of Life</option>
+                    <option value="space">Space</option>
+                    <option value="super-power">Super Power</option>
+                    <option value="supernatural">Supernatural</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="war">War</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="season">Season:</label>
+                <select id="Season">
+                    <option value="all">All</option>
+                    <option value="season-1">Spring (Season 1)</option>
+                    <option value="season-2">Summer (Season 2)</option>
+                    <option value="season-3">Fall (Season 3)</option>
+                    <option value="season-4">Winter (Season 4)</option>
+                </select>
+                <label for="status">Status:</label>
+                <select id="status">
+                    <option>Status All</option>
+                    <option value="finished">Finished</option>
+                    <option value="ongoing">Ongoing</option>
+                    <option value="cancelled">Cancelled</option>
+                    <option value="hiatus">Hiatus</option>
+                    <option value="dropped">Dropped</option>
+                    <option value="planned">Planned</option>
+                    <option value="replaced">Replaced</option>
+                    <option value="not-yet-aired">Not Yet Aired</option>
+                </select>
+                <label for="Rated">Rated</label>
+                <select id="rated">
+                    <option value="">All</option>
+                    <option value="G">G</option>
+                    <option value="PG">PG</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
+                    <option value="NC-17">NC-17</option>
+                    <option value="NR">NR</option>
+                    <option value="18+">18+</option>
+                </select>
+                <label for="sort">Sort</label>
+                <select id="sort">
+                    <option value="default">Default</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="released-date">Released Date</option>
+                    <option value="most-watched">Most Watched</option>
+                    <option value="rated">Rated</option>
+                </select>
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

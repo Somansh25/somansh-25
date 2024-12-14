@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Anime</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #2c2c54;
+            color: #ffffff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #222240;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #1c1c3a;
+            border-radius: 25px;
+            padding: 5px 15px;
+        }
+        .header .search-bar input {
+            background: none;
+            border: none;
+            color: #ffffff;
+            outline: none;
+            padding: 5px;
+            width: 200px;
+        }
+        .header .search-bar i {
+            color: #ffffff;
+        }
+        .header .menu {
+            display: flex;
+            align-items: center;
+        }
+        .header .menu i {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .main-content {
+            position: relative;
+            text-align: left;
+        }
+        .main-content img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 15px;
+            
+        }
+        .main-content h1 {
+            position: absolute;
+            bottom: 80px;
+            left: 20px;
+            font-size: 48px;
+            margin: 0;
+            color: #ffffff;
+        }
+        .main-content .details {
+            position: absolute;
+            bottom: 60px;
+            left: 20px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        .main-content .buttons {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .main-content .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .main-content .buttons .watch {
+            background-color: #5b21b6;
+            color: #ffffff;
+        }
+        .main-content .buttons .rate {
+            background-color: #1c1c3a;
+            color: #ffffff;
+        }
+        .synopsis {
+            text-align: left;
+            margin: 40px 0;
+        }
+        .synopsis h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .synopsis p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .episodes {
+            text-align: left;
+        }
+        .episodes h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .episodes .episode-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .episodes .episode {
+            background-color: #1c1c3a;
+            border-radius: 15px;
+            overflow: hidden;
+            width: calc(25% - 20px);
+            min-width: 200px;
+        }
+        .episodes .episode img {
+            width: 100%;
+        }
+        .episodes .episode .info {
+            padding: 10px;
+        }
+        .episodes .episode .info h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .episodes .episode .info p {
+            font-size: 14px;
+            color: #a1a1aa;
+        }
+        @media (max-width: 768px) {
+            .header .search-bar input {
+                width: 100px;
+            }
+            .episodes .episode {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .header .search-bar input {
+                width: 50px;
+            }
+            .episodes .episode {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            AnimeWorld
+        </div>
+        <div class="search-bar">
+            <input placeholder="Search" type="text"/>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="main-content">
+        <img alt="Anime scene with a person walking down a street with tall buildings and a cloudy sky" height="450" src="https://storage.googleapis.com/a1aa/image/MrjacEwBgg7CK1oe53eX7qPY8oTFsOdnK5NNnJ77CXTN526TA.jpg" width="800"/>
+        <h1>Attack on Titan</h1>
+        <div class="details">
+            2013 | TV-MA | 4 Seasons
+        </div>
+        <div class="buttons">
+            <button class="watch">Watch S1 E1</button>
+            <button class="rate">Rate</button>
+        </div>
+    </div>
+    <div class="synopsis">
+        <h2>Synopsis</h2>
+        <p>When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the humans' safe zone.</p>
+    </div>
+    <div class="episodes">
+        <h2>Episodes</h2>
+        <div class="episode-list">
+            <div class="episode">
+                <img alt="Episode scene from Attack on Titan" height="112" src="https://storage.googleapis.com/a1aa/image/e1LezWILpvuqt0e65nrsupu3HCatnYYohTyYwAv4qfBeJ3WfE.jpg" width="200"/>
+                <div class="info">
+                    <h3>To You, 2000 Years in the Future: The Fall of Zhiganshina, Part 1</h3>
+                    <p>S1 E1</p>
+                    <p>24m</p>
+                </div>
+            </div>
+            <div class="episode">
+                <img alt="Episode scene from Attack on Titan" height="112" src="https://storage.googleapis.com/a1aa/image/e1LezWILpvuqt0e65nrsupu3HCatnYYohTyYwAv4qfBeJ3WfE.jpg" width="200"/>
+                <div class="info">
+                    <h3>That Day: The Fall of Zhiganshina, Part 2</h3>
+                    <p>S1 E2</p>
+                    <p>24m</p>
+                </div>
+            </div>
+            <div class="episode">
+                <img alt="Episode scene from Attack on Titan" height="112" src="https://storage.googleapis.com/a1aa/image/e1LezWILpvuqt0e65nrsupu3HCatnYYohTyYwAv4qfBeJ3WfE.jpg" width="200"/>
+                <div class="info">
+                    <h3>A Dim Light Amid Despair: Humanity's Comeback, Part 1</h3>
+                    <p>S1 E3</p>
+                    <p>24m</p>
+                </div>
+            </div>
+            <div class="episode">
+                <img alt="Episode scene from Attack on Titan" height="112" src="https://storage.googleapis.com/a1aa/image/e1LezWILpvuqt0e65nrsupu3HCatnYYohTyYwAv4qfBeJ3WfE.jpg" width="200"/>
+                <div class="info">
+                    <h3>The Night of the Closing Ceremony: Humanity's Comeback, Part 2</h3>
+                    <p>S1 E4</p>
+                    <p>24m</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
